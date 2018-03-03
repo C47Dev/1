@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body {
+  padding: 0;
+  margin: 0;
+  background: url('../img/bodyBackground.png') 50% 0% no-repeat;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main-container {
+  padding: 0;
+  margin: 0;
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main-header {
+  padding: 10px;
+  width: inherit;
+  height: 590px;
+  color: white;
+}
+
+.main-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0.9em;
+  position: relative;
+}
+
+.main-navigation .main-menu li {
+  display: inline-block;
+}
+
+.main-navigation .main-menu li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: color 1s;
+}
+
+.main-navigation .main-menu li a:hover {
+  color: #5f7dff;
+}
+
+.main-navigation .main-menu li:first-child a {
+  border-bottom: 3px solid white;
+}
+
+.main-navigation .main-menu li:last-child a {
+  margin-left: 430px;
+}
+
+.main-navigation .main-menu li:last-child a:before {
+  content: "";
+  width: 18px;
+  height: 16px;
+  position: absolute;
+  top: 3px;
+  left: 885px;
+  background: url('../img/loginIcon.png');
+}
+
+.logo {
+  display: block;
+  width: 368px;
+  height: 204px; 
+  margin: 100px auto;
+}
+
+.main-header-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: -100px;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.rhomb {
+  position: relative;
+}
+
+
+.section .rhomb .rhomb-right {
+  height: 0;
+  position: absolute;
+  border: 10px solid white;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.section .rhomb .rhomb-left {
+  height: 0;
+  position: absolute;
+  left: -20px;
+  border: 10px solid white;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+}
+
+.main-header-section .section p {
+ width: 302px;
+ margin-top: 50px;
+ text-align: center;
+ font-size: 0.9em;
+}
